@@ -35,8 +35,9 @@ const CountdownTimer: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center bg-gray-900">
-        <h1 className="text-4xl font-extrabold uppercase mb-6 text-white hover:underline">Countdown Timer</h1>
+    <div className="flex flex-col min-h-screen items-center justify-center bg-gradient-to-br from-black via-purple-900 to-gray-900 h-screen">
+        <h1 className=" uppercase mb-6 hover:underline
+        text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 text-5xl font-bold">Countdown Timer</h1>
      <input type="number" className="border-2 border-grey-400 bg-transparent p-3 mb-6 text-white text-xl rounded"
      placeholder="Enter time in seconds"
      value={time > 0 ? time:""}
@@ -45,15 +46,15 @@ const CountdownTimer: React.FC = () => {
      <div>
         <button
         onClick={handleStart}
-        className="text-white px-8 py-4 rounded-lg font-normal bg-red-600 hover:bg-red-500">Start
+        className="text-white px-8 py-4 rounded-lg font-normal bg-blue-500 hover:bg-blue-600">Start
         </button>
         <button
         onClick={handlePause}
-        className="text-white px-8 py-4 rounded-lg font-normal bg-blue-600 hover:bg-blue-500">Pause
+        className="text-white px-8 py-4 rounded-lg font-normal bg-orange-500 hover:bg-orange-600">Pause
         </button>
         <button
         onClick={handleReset}
-        className="text-white px-8 py-4 rounded-lg font-normal bg-green-600 hover:bg-green-500">Reset
+        className="text-white px-8 py-4 rounded-lg font-normal bg-green-500 hover:bg-green-600">Reset
         </button>
      </div>
     </div>
